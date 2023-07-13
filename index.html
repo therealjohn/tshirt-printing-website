@@ -7,15 +7,42 @@
 </head>
 <body>
     <h1>Welcome to T-Shirt Printing</h1>
-    <p>AI-Generated Sample Designs:</p>
+
+    <!-- <p>AI-Generated Sample Designs:</p>
     <div id="sample-designs">
-        <!-- Display AI-generated sample designs here -->
-    </div>
+        <!-- Sample designs will be dynamically added here -->
+    </div> -->
+
     <p>Upload Your Own Design:</p>
     <input type="file" id="design-upload">
+
     <div id="design-preview">
-        <!-- Display user-uploaded design preview here -->
+        <!-- Design preview will be dynamically added here -->
     </div>
+
+    <p>Order Details:</p>
+    <form id="order-form">
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" required>
+
+        <label for="email-input">Email:</label>
+        <input type="email" id="email-input" required>
+
+        <label for="size-select">Size:</label>
+        <select id="size-select">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+        </select>
+
+        <label for="color-select">Color:</label>
+        <select id="color-select">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+    </form>
+
     <button id="submit-order">Submit Order</button>
 
     <script>
